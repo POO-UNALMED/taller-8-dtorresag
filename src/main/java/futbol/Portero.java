@@ -17,10 +17,10 @@ public class Portero extends Futbolista{
 	}
 	
 	public String toString() {
-		return "EL futbolista " + super.getNombre() + " tiene " + super.getEdad() + ", y juega de " + super.getPosicion()+" con el dorsal"+dorsal+". Le han marcado " +golesRecibidos;
+		return "El futbolista " + super.getNombre() + " tiene " + super.getEdad() + ", y juega de " + super.getPosicion()+" con el dorsal "+dorsal+". Le han marcado " +golesRecibidos;
 	}
 	
 	public int compareTo(Object p) {
-		return golesRecibidos-((Portero)p).golesRecibidos;
+		return ((Portero)p).golesRecibidos-golesRecibidos;
 	}
 }
